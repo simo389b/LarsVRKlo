@@ -47,8 +47,8 @@ def findMirrorPoints(lines, SPoint, RPoint):
     for i in range(len(lines)):
         print('halløj')
         #while((mirrorY[i]-SPoint[1])/(mirrorX[i]-SPoint[0])!=(RPoint[1]-mirrorY[i])/(RPoint[0]-mirrorX[i])):
-        while(((mirrorY[i]-SPoint[1])/(mirrorX[i]-SPoint[0]))-((RPoint[1]-mirrorY[i])/(RPoint[0]-mirrorX[i]))>0.0001):
-            if (i == 0 and mirrorX[i]<np.max(lines[0][:,:])): #mangler at X ikke må gå over højeste dim
+        while(((mirrorY[i]-SPoint[1])/(mirrorX[i]-SPoint[0]))-((RPoint[1]-mirrorY[i])/(RPoint[0]-mirrorX[i]))>0.001):
+            if (i == 0 and mirrorX[i]<np.max(lines[0][:,:])): 
                 mirrorY[i] = 0
                 mirrorX[i] += 0.0001
                 #print(mirrorX[i])
@@ -61,6 +61,7 @@ def findMirrorPoints(lines, SPoint, RPoint):
             elif (i == 3 and mirrorY[i]<np.max(lines[2][:,:])):
                 mirrorX[i] = np.max(lines[0][:,:]) # Burde give max X roomDim
                 mirrorY[i] += 0.0001
+                print(mirrorY[i])
     return mirrorX, mirrorY
     
 roomDim = [200, 200] # Corner points of rectangle
