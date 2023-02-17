@@ -2,7 +2,7 @@
 """
 Created on Wed Feb 15 12:10:36 2023
 
-@author: jonas
+@author: Simon
 """
 
 import numpy as np
@@ -36,7 +36,7 @@ def plotRoom(lines, SPoint, RPoint, MPoint):
         markerfacecolor="red")
     
     for i in range(len(MPoint[0])):
-        plt.plot(MPoint[0][i], MPoint[1][i], marker="*", markersize=10)#, markeredgecolor="blue", markerfacecolor="blue")
+        plt.plot(MPoint[0][i], MPoint[1][i], MPoint[3][i], MPoint[2][i], marker="*", markersize=10)#, markeredgecolor="blue", markerfacecolor="blue")
     
     plt.show()
 
@@ -47,7 +47,7 @@ def findMirrorPoints(lines, SPoint, RPoint):
     for i in range(len(lines)):
         print('halløj')
         #while((mirrorY[i]-SPoint[1])/(mirrorX[i]-SPoint[0])!=(RPoint[1]-mirrorY[i])/(RPoint[0]-mirrorX[i])):
-        while(((mirrorY[i]-SPoint[1])/(mirrorX[i]-SPoint[0]))-((RPoint[1]-mirrorY[i])/(RPoint[0]-mirrorX[i]))>0.001):
+        while(((abs(mirrorY[i]-SPoint[1]))/(abs(mirrorX[i]-SPoint[0])))-((abs(RPoint[1]-mirrorY[i]))/(abs(RPoint[0]-mirrorX[i])))>0.1):
             if (i == 0 and mirrorX[i]<np.max(lines[0][:,:])): 
                 mirrorY[i] = 0
                 mirrorX[i] += 0.0001
@@ -61,18 +61,33 @@ def findMirrorPoints(lines, SPoint, RPoint):
             elif (i == 3 and mirrorY[i]<np.max(lines[2][:,:])):
                 mirrorX[i] = np.max(lines[0][:,:]) # Burde give max X roomDim
                 mirrorY[i] += 0.0001
-                print(mirrorY[i])
+                
     return mirrorX, mirrorY
+
+def findMirrorPoints2(lines, SPoint, RPoint, dim):
+    point1 = [0,0]
+    point1[0] = ((SPoint[0]*RPoint[1])+(RPoint[0]*SPoint[1]))/(SPoint[1]+RPoint[1])
     
-roomDim = [200, 200] # Corner points of rectangle
+    point2 = [0,0]
+    point2[1] = ((SPoint[0]*RPoint[1])+(RPoint[0]*SPoint[1]))/(SPoint[0]+RPoint[0])
+    
+    point3 = [0, dim[1]]
+    point3[0] =  -((SPoint[0]*(dim[1]-RPoint[1]))+(RPoint[0]*(dim[1]-SPoint[1])))/(-2*dim[1]+(SPoint[1]+RPoint[1]))
+    
+    point4 = [dim[0], 0]
+    point4[1] = -((dim[0]*(RPoint[1]+SPoint[1])-SPoint[0]*RPoint[1]-RPoint[0]*SPoint[1])/(-2*dim[0]+SPoint[0]+RPoint[0]))
+    return point1, point2, point3, point4
+
+roomDim = [200, 150] # Corner points of rectangle
 dataRes = 10000 # Number of points between points
 S = [40, 50] # Source point
-R = [90, 100] # Reciever point
+R = [140, 110] # Reciever point
+
 
 roomLines = rectRoomGenerator(roomDim, dataRes) #Bottom X line, top X line, left Y line, right Y line
 
 #ipython.magic("timeit findMirrorPoints(roomLines, S, R)")
-mirrorPoints = findMirrorPoints(roomLines, S, R)
+mirrorPoints = findMirrorPoints2(roomLines, S, R, roomDim)
 
 print(mirrorPoints)
 
