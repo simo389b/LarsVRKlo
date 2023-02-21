@@ -24,11 +24,36 @@ def rectRoomGenerator(upperBounds, dataResolution):
 
     return WX1, WX2, WY1, WY2
 
-def plotRoom(lines, SPoint, RPoint, MPoint):
-    plt.plot(lines[0][:,0],lines[0][:,1])
-    plt.plot(lines[1][:,0],lines[1][:,1])
-    plt.plot(lines[2][:,0],lines[2][:,1])
-    plt.plot(lines[3][:,0],lines[3][:,1]) 
+def plotRoom(lines, SPoint, RPoint, MPoint, order):
+    for i in range(order):
+        for j in range(len(lines)):
+            
+            
+            plt.plot(lines[j][:,0]+(i+1)*max(lines[j][:,0]),lines[j][:,1], color='k')
+            plt.plot(lines[j][:,0],lines[j][:,1]+(i+1)*max(lines[j][:,1]), color='k')
+            plt.plot(-lines[j][:,0]-(i)*max(lines[j][:,0]),lines[j][:,1], color='k')
+            plt.plot(lines[j][:,0],-lines[j][:,1]-(i)*max(lines[j][:,1]), color='k')
+            
+            if (i>0 and i<2):
+                plt.plot(lines[j][:,0]+(i)*max(lines[0][:,0]),lines[j][:,1]+(i)*max(lines[2][:,1]), color='k')
+                plt.plot(lines[j][:,0]-(i)*max(lines[0][:,0]),lines[j][:,1]-(i)*max(lines[2][:,1]), color='k')
+                plt.plot(lines[j][:,0]+(i)*max(lines[0][:,0]),lines[j][:,1]-(i)*max(lines[2][:,1]), color='k')
+                plt.plot(lines[j][:,0]-(i)*max(lines[0][:,0]),lines[j][:,1]+(i)*max(lines[2][:,1]), color='k')
+            
+            if (i>1):
+                plt.plot(lines[j][:,0]+(i-1)*max(lines[0][:,0]),lines[j][:,1]+(i)*max(lines[2][:,1]), color='k')
+                plt.plot(lines[j][:,0]+(i)*max(lines[0][:,0]),lines[j][:,1]+(i-1)*max(lines[2][:,1]), color='k')
+                
+                plt.plot(-lines[j][:,0]-(i-2)*max(lines[0][:,0]),lines[j][:,1]+(i)*max(lines[2][:,1]), color='k')
+                plt.plot(-lines[j][:,0]-(i-1)*max(lines[0][:,0]),-lines[j][:,1]+(i)*max(lines[2][:,1]), color='k')
+                
+                plt.plot(-lines[j][:,0]-(i-1)*max(lines[0][:,0]),lines[j][:,1]-(i-1)*max(lines[2][:,1]), color='k')
+                plt.plot(-lines[j][:,0]-(i-2)*max(lines[0][:,0]),lines[j][:,1]-(i)*max(lines[2][:,1]), color='k')
+                
+                plt.plot(lines[j][:,0]+(i)*max(lines[0][:,0]),lines[j][:,1]-(i-1)*max(lines[2][:,1]), color='k')
+                plt.plot(lines[j][:,0]+(i-1)*max(lines[0][:,0]),lines[j][:,1]-(i)*max(lines[2][:,1]), color='k')
+                
+            plt.plot(lines[j][:,0],lines[j][:,1], color='k')
     #plt.twinx()
     #plt.twiny()
     
@@ -36,9 +61,9 @@ def plotRoom(lines, SPoint, RPoint, MPoint):
         markerfacecolor="green")
     plt.plot(RPoint[0], RPoint[1], marker="x", markersize=10, markeredgecolor="red",
         markerfacecolor="red")
-    
-    for i in range(len(MPoint[0])):
-        plt.plot(MPoint[0][i,0], MPoint[0][i,1], marker="*", markersize=10)#, markeredgecolor="blue", markerfacecolor="blue")
+    for j in range(order):
+        for i in range(len(MPoint[j])):
+            plt.plot(MPoint[j][i,0], MPoint[j][i,1], marker="*", markersize=10)#, markeredgecolor="blue", markerfacecolor="blue")
     #plt.show()
 
 #@jit()
@@ -106,52 +131,86 @@ def findMirrorPoints3(lines, SPoint, RPoint, dim, order):
 def findMirrorPoints4(lines, SPoint, RPoint, dim, order):
     mirrorPointsXY = [0] * order # Tredje dimension er ordensindex 
     for i in range(order):
-        mirrorPointsXY[i] = np.zeros((len(lines)**(i+1),2))
-        for j in range (len(lines)**(i+1)):
-           
+        mirrorPointsXY[i] = np.zeros((len(lines)*(i+1),2))
+        for j in range (len(lines)*(i+1)):
             #HØJRE VÆG!!
-            if(j==0):
+            #if(i==0):
                 #mirrorPointsXY[i][j,0] = ((i+1)*dim[0]+(i+1)%2*dim[0]+((-1)**(i+1)*SPoint[0]))
-                mirrorPointsXY[i][j,0] = dim[0]*(i+1+(1+(-1)**i)/(2))+SPoint[0]*(-1)**(i+1)                    
-                mirrorPointsXY[i][j,1] = SPoint[1]
+            mirrorPointsXY[i][0,0] = dim[0]*(i+1+(1+(-1)**i)/(2))+SPoint[0]*(-1)**(i+1)                    
+            mirrorPointsXY[i][0,1] = SPoint[1]
                 
             #ØVERSTE VÆG!!
-            if(j==1):
-                mirrorPointsXY[i][j,0] = SPoint[0]
-                #mirrorPointsXY[i][j,1] = ((i+1)*dim[1]+(i+1)%2*dim[1]+((-1)**(i+1)*SPoint[1]))
-                mirrorPointsXY[i][j,1] = dim[1]*(i+1+(1+(-1)**i)/(2))+SPoint[1]*(-1)**(i+1)
+            #if(j==1):
+            mirrorPointsXY[i][1,0] = SPoint[0]
+            #mirrorPointsXY[i][j,1] = ((i+1)*dim[1]+(i+1)%2*dim[1]+((-1)**(i+1)*SPoint[1]))
+            mirrorPointsXY[i][1,1] = dim[1]*(i+1+(1+(-1)**i)/(2))+SPoint[1]*(-1)**(i+1)
                 
             #VENSTRE VÆG!!
-            if(j==2):
-                mirrorPointsXY[i][j,0] = -((i)*dim[0]+(i)%2*dim[0]+((-1)**(i)*SPoint[0]))
-                mirrorPointsXY[i][j,1] = SPoint[1]
+            #if(j==2):
+            #mirrorPointsXY[i][j,0] = -((i)*dim[0]+(i)%2*dim[0]+((-1)**(i)*SPoint[0]))
+            mirrorPointsXY[i][2,0] = -(dim[0]*(i+(1+(-1)**(i+1))/(2))+SPoint[0]*(-1)**(i))
+            mirrorPointsXY[i][2,1] = SPoint[1]
                 
             #NEDERSTE VÆG!!
-            if(j==3):
-                mirrorPointsXY[i][j,0] = SPoint[0]
-                mirrorPointsXY[i][j,1] = -((i)*dim[1]+(i)%2*dim[1]+((-1)**(i)*SPoint[1]))
+            #if(j==3):
+            mirrorPointsXY[i][3,0] = SPoint[0]
+            #mirrorPointsXY[i][j,1] = -((i)*dim[1]+(i)%2*dim[1]+((-1)**(i)*SPoint[1]))
+            mirrorPointsXY[i][3,1] = -(dim[1]*(i+(1+(-1)**(i+1))/(2))+SPoint[1]*(-1)**(i))
                 
             
+            if(i==1): 
+                #ØVRE-HØJRE VÆG!!
+                mirrorPointsXY[i][4,0] = mirrorPoints[i-1][0,0]
+                mirrorPointsXY[i][4,1] = dim[1]*(i+(1+(-1)**(i-1))/(2))+mirrorPointsXY[i-1][0,1]*(-1)**(i)                    
+                
+                #ØVRE-VENSTRE VÆG!!
+                mirrorPointsXY[i][5,0] = mirrorPoints[i-1][2,0]
+                mirrorPointsXY[i][5,1] = dim[1]*(i+(1+(-1)**(i-1))/(2))+mirrorPointsXY[i-1][2,1]*(-1)**(i)
+                
+                #NEDRE-VENSTRE VÆG!!
+                mirrorPointsXY[i][6,0] = mirrorPoints[i-1][2,0]
+                mirrorPointsXY[i][6,1] = -(dim[1]*(i-1+(1+(-1)**(i))/(2))+mirrorPoints[i-1][2,1]*(-1)**(i-1))
+                
+                #NEDRE-HØJRE VÆG!!
+                mirrorPointsXY[i][7,0] = mirrorPoints[i-1][0,0]
+                mirrorPointsXY[i][7,1] = -(dim[1]*(i-1+(1+(-1)**(i))/(2))+mirrorPoints[i-1][0,1]*(-1)**(i-1))
+            
+            if(i==2):
+                #ØVRE-HØJRE-HØJRE!!
+                mirrorPointsXY[i][4,0] = mirrorPoints[i-1][0,0]
+                mirrorPointsXY[i][4,1] = dim[1]*(i+1+(1+(-1)**(i))/(2))+mirrorPointsXY[i-1][0,1]*(-1)**(i+1)
     return mirrorPointsXY
+"""
+def findMirrorPoints5(lines, SPoint, RPoint, dim, order):
+    mirrorPointsXY = [0] * order # Tredje dimension er ordensindex 
+    for i in range(order):
+        mirrorPointsXY[i] = np.zeros((len(lines)**(i+1),2))
+        if(i>=0):
+            for j in range (len(lines)**(i+1)):
+                mirrorPointsXY[i][j] = 
+            
+            
+    return mirrorPointsXY
+"""
 
 roomDim = [200, 150] # Corner points of rectangle
 dataRes = 10000 # Number of points between points
 S = [70, 50] # Source point
 R = [140, 110] # Reciever point
-reflectionOrder = 1 # Number of reflections to be considered
+reflectionOrder = 3 # Number of reflections to be considered
 
 roomLines = rectRoomGenerator(roomDim, dataRes) #Bottom X line, top X line, left Y line, right Y line
 
 #ipython.magic("timeit findMirrorPoints(roomLines, S, R)")
-mirrorPoints2 = findMirrorPoints3(roomLines, S, R, roomDim, reflectionOrder)
+#mirrorPoints2 = findMirrorPoints3(roomLines, S, R, roomDim, reflectionOrder)
 mirrorPoints = findMirrorPoints4(roomLines, S, R, roomDim, reflectionOrder)
 
 print(mirrorPoints)
 
-plotRoom(roomLines, S, R, mirrorPoints)
-plotRoom(roomLines, S, R, mirrorPoints2)
+#plotRoom(roomLines, S, R, mirrorPoints)
+plotRoom(roomLines, S, R, mirrorPoints, reflectionOrder)
 plt.show()
 
-
+#ipython.magic("timeit findMirrorPoints4(roomLines, S, R, roomDim, reflectionOrder)")
 
 
