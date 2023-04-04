@@ -160,24 +160,24 @@ def findMirrorPoints4(lines, SPoint, RPoint, dim, order):
             
             if(i==1): 
                 #ØVRE-HØJRE VÆG!!
-                mirrorPointsXY[i][4,0] = mirrorPoints[i-1][0,0]
+                mirrorPointsXY[i][4,0] = mirrorPointsXY[i-1][0,0]
                 mirrorPointsXY[i][4,1] = dim[1]*(i+(1+(-1)**(i-1))/(2))+mirrorPointsXY[i-1][0,1]*(-1)**(i)                    
                 
                 #ØVRE-VENSTRE VÆG!!
-                mirrorPointsXY[i][5,0] = mirrorPoints[i-1][2,0]
+                mirrorPointsXY[i][5,0] = mirrorPointsXY[i-1][2,0]
                 mirrorPointsXY[i][5,1] = dim[1]*(i+(1+(-1)**(i-1))/(2))+mirrorPointsXY[i-1][2,1]*(-1)**(i)
                 
                 #NEDRE-VENSTRE VÆG!!
-                mirrorPointsXY[i][6,0] = mirrorPoints[i-1][2,0]
-                mirrorPointsXY[i][6,1] = -(dim[1]*(i-1+(1+(-1)**(i))/(2))+mirrorPoints[i-1][2,1]*(-1)**(i-1))
+                mirrorPointsXY[i][6,0] = mirrorPointsXY[i-1][2,0]
+                mirrorPointsXY[i][6,1] = -(dim[1]*(i-1+(1+(-1)**(i))/(2))+mirrorPointsXY[i-1][2,1]*(-1)**(i-1))
                 
                 #NEDRE-HØJRE VÆG!!
-                mirrorPointsXY[i][7,0] = mirrorPoints[i-1][0,0]
-                mirrorPointsXY[i][7,1] = -(dim[1]*(i-1+(1+(-1)**(i))/(2))+mirrorPoints[i-1][0,1]*(-1)**(i-1))
+                mirrorPointsXY[i][7,0] = mirrorPointsXY[i-1][0,0]
+                mirrorPointsXY[i][7,1] = -(dim[1]*(i-1+(1+(-1)**(i))/(2))+mirrorPointsXY[i-1][0,1]*(-1)**(i-1))
             
             if(i==2):
                 #ØVRE-HØJRE-HØJRE!!
-                mirrorPointsXY[i][4,0] = mirrorPoints[i-1][0,0]
+                mirrorPointsXY[i][4,0] = mirrorPointsXY[i-1][0,0]
                 mirrorPointsXY[i][4,1] = dim[1]*(i+1+(1+(-1)**(i))/(2))+mirrorPointsXY[i-1][0,1]*(-1)**(i+1)
     return mirrorPointsXY
 """

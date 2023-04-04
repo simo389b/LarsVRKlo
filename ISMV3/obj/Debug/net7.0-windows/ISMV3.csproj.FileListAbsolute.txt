@@ -1,0 +1,15 @@
+D:\P8\LarsVRKlo\ISMV3\bin\Debug\net7.0-windows\ISMV3.exe
+D:\P8\LarsVRKlo\ISMV3\bin\Debug\net7.0-windows\ISMV3.deps.json
+D:\P8\LarsVRKlo\ISMV3\bin\Debug\net7.0-windows\ISMV3.runtimeconfig.json
+D:\P8\LarsVRKlo\ISMV3\bin\Debug\net7.0-windows\ISMV3.dll
+D:\P8\LarsVRKlo\ISMV3\bin\Debug\net7.0-windows\ISMV3.pdb
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.csproj.AssemblyReference.cache
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.GeneratedMSBuildEditorConfig.editorconfig
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.AssemblyInfoInputs.cache
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.AssemblyInfo.cs
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.csproj.CoreCompileInputs.cache
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.dll
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\refint\ISMV3.dll
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.pdb
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ISMV3.genruntimeconfig.cache
+D:\P8\LarsVRKlo\ISMV3\obj\Debug\net7.0-windows\ref\ISMV3.dll

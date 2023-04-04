@@ -1,0 +1,15 @@
+D:\P8\LarsVRKlo\ISM3D\bin\Debug\net7.0\ISM3D.exe
+D:\P8\LarsVRKlo\ISM3D\bin\Debug\net7.0\ISM3D.deps.json
+D:\P8\LarsVRKlo\ISM3D\bin\Debug\net7.0\ISM3D.runtimeconfig.json
+D:\P8\LarsVRKlo\ISM3D\bin\Debug\net7.0\ISM3D.dll
+D:\P8\LarsVRKlo\ISM3D\bin\Debug\net7.0\ISM3D.pdb
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.csproj.AssemblyReference.cache
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.GeneratedMSBuildEditorConfig.editorconfig
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.AssemblyInfoInputs.cache
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.AssemblyInfo.cs
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.csproj.CoreCompileInputs.cache
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.dll
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\refint\ISM3D.dll
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.pdb
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ISM3D.genruntimeconfig.cache
+D:\P8\LarsVRKlo\ISM3D\obj\Debug\net7.0\ref\ISM3D.dll

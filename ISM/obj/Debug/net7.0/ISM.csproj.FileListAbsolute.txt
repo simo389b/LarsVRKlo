@@ -1,0 +1,15 @@
+D:\P8\LarsVRKlo\ISM\bin\Debug\net7.0\ISM.exe
+D:\P8\LarsVRKlo\ISM\bin\Debug\net7.0\ISM.deps.json
+D:\P8\LarsVRKlo\ISM\bin\Debug\net7.0\ISM.runtimeconfig.json
+D:\P8\LarsVRKlo\ISM\bin\Debug\net7.0\ISM.dll
+D:\P8\LarsVRKlo\ISM\bin\Debug\net7.0\ISM.pdb
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.csproj.AssemblyReference.cache
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.GeneratedMSBuildEditorConfig.editorconfig
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.AssemblyInfoInputs.cache
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.AssemblyInfo.cs
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.csproj.CoreCompileInputs.cache
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.dll
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\refint\ISM.dll
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.pdb
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ISM.genruntimeconfig.cache
+D:\P8\LarsVRKlo\ISM\obj\Debug\net7.0\ref\ISM.dll
