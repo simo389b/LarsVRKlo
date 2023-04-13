@@ -1,0 +1,15 @@
+/home/simon/Documents/LarsVRKlo/ISM3D/bin/Debug/net6.0/ISM3D
+/home/simon/Documents/LarsVRKlo/ISM3D/bin/Debug/net6.0/ISM3D.deps.json
+/home/simon/Documents/LarsVRKlo/ISM3D/bin/Debug/net6.0/ISM3D.runtimeconfig.json
+/home/simon/Documents/LarsVRKlo/ISM3D/bin/Debug/net6.0/ISM3D.dll
+/home/simon/Documents/LarsVRKlo/ISM3D/bin/Debug/net6.0/ref/ISM3D.dll
+/home/simon/Documents/LarsVRKlo/ISM3D/bin/Debug/net6.0/ISM3D.pdb
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.csproj.AssemblyReference.cache
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.GeneratedMSBuildEditorConfig.editorconfig
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.AssemblyInfoInputs.cache
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.AssemblyInfo.cs
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.csproj.CoreCompileInputs.cache
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.dll
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ref/ISM3D.dll
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.pdb
+/home/simon/Documents/LarsVRKlo/ISM3D/obj/Debug/net6.0/ISM3D.genruntimeconfig.cache

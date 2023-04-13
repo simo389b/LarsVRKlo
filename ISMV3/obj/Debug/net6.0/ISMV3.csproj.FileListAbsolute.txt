@@ -1,0 +1,5 @@
+/home/simon/Documents/LarsVRKlo/ISMV3/obj/Debug/net6.0/ISMV3.csproj.AssemblyReference.cache
+/home/simon/Documents/LarsVRKlo/ISMV3/obj/Debug/net6.0/ISMV3.GeneratedMSBuildEditorConfig.editorconfig
+/home/simon/Documents/LarsVRKlo/ISMV3/obj/Debug/net6.0/ISMV3.AssemblyInfoInputs.cache
+/home/simon/Documents/LarsVRKlo/ISMV3/obj/Debug/net6.0/ISMV3.AssemblyInfo.cs
+/home/simon/Documents/LarsVRKlo/ISMV3/obj/Debug/net6.0/ISMV3.csproj.CoreCompileInputs.cache

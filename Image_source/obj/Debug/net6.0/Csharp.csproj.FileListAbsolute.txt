@@ -1,0 +1,15 @@
+/home/simon/Documents/Csharp/bin/Debug/net6.0/Csharp
+/home/simon/Documents/Csharp/bin/Debug/net6.0/Csharp.deps.json
+/home/simon/Documents/Csharp/bin/Debug/net6.0/Csharp.runtimeconfig.json
+/home/simon/Documents/Csharp/bin/Debug/net6.0/Csharp.dll
+/home/simon/Documents/Csharp/bin/Debug/net6.0/ref/Csharp.dll
+/home/simon/Documents/Csharp/bin/Debug/net6.0/Csharp.pdb
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.csproj.AssemblyReference.cache
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.AssemblyInfoInputs.cache
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.AssemblyInfo.cs
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.csproj.CoreCompileInputs.cache
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.dll
+/home/simon/Documents/Csharp/obj/Debug/net6.0/ref/Csharp.dll
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.pdb
+/home/simon/Documents/Csharp/obj/Debug/net6.0/Csharp.genruntimeconfig.cache
