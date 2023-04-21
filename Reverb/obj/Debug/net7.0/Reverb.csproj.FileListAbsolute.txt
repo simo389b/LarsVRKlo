@@ -1,0 +1,15 @@
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\bin\Debug\net7.0\Reverb.exe
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\bin\Debug\net7.0\Reverb.deps.json
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\bin\Debug\net7.0\Reverb.runtimeconfig.json
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\bin\Debug\net7.0\Reverb.dll
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\bin\Debug\net7.0\Reverb.pdb
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.csproj.AssemblyReference.cache
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.AssemblyInfoInputs.cache
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.AssemblyInfo.cs
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.csproj.CoreCompileInputs.cache
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.dll
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\refint\Reverb.dll
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.pdb
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\Reverb.genruntimeconfig.cache
+C:\Users\bobbe\Desktop\unipro\LarsVRKlo\Reverb\obj\Debug\net7.0\ref\Reverb.dll
