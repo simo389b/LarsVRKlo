@@ -13,3 +13,10 @@ C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\obj\Deb
 C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\obj\Debug\net7.0\AllpassFilter_class.pdb
 C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\obj\Debug\net7.0\AllpassFilter_class.genruntimeconfig.cache
 C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\obj\Debug\net7.0\ref\AllpassFilter_class.dll
+C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\bin\Debug\net7.0\NAudio.dll
+C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\bin\Debug\net7.0\NAudio.Asio.dll
+C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\bin\Debug\net7.0\NAudio.Core.dll
+C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\bin\Debug\net7.0\NAudio.Midi.dll
+C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\bin\Debug\net7.0\NAudio.Wasapi.dll
+C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\bin\Debug\net7.0\NAudio.WinMM.dll
+C:\Users\alber\OneDrive - Aalborg Universitet\GitHub\AllpassFilter_class\obj\Debug\net7.0\AllpassFilter_class.csproj.CopyComplete
