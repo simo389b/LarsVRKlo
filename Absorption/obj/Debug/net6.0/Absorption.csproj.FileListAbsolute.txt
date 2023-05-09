@@ -1,0 +1,15 @@
+/home/simon/Documents/Absorption/bin/Debug/net6.0/Absorption
+/home/simon/Documents/Absorption/bin/Debug/net6.0/Absorption.deps.json
+/home/simon/Documents/Absorption/bin/Debug/net6.0/Absorption.runtimeconfig.json
+/home/simon/Documents/Absorption/bin/Debug/net6.0/Absorption.dll
+/home/simon/Documents/Absorption/bin/Debug/net6.0/ref/Absorption.dll
+/home/simon/Documents/Absorption/bin/Debug/net6.0/Absorption.pdb
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.csproj.AssemblyReference.cache
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.GeneratedMSBuildEditorConfig.editorconfig
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.AssemblyInfoInputs.cache
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.AssemblyInfo.cs
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.csproj.CoreCompileInputs.cache
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.dll
+/home/simon/Documents/Absorption/obj/Debug/net6.0/ref/Absorption.dll
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.pdb
+/home/simon/Documents/Absorption/obj/Debug/net6.0/Absorption.genruntimeconfig.cache
