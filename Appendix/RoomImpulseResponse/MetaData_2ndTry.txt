@@ -1,5 +1,0 @@
-Mic2Speaker:	1.00 meter
-Mic2Floor:		1.15 meter
-Speaker2Floor:	1.13 meter
-Speaker2back:	1.28 meter
-Speaker&Mic:	i midten af rummet (se billeder)
