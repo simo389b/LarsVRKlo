@@ -1,0 +1,15 @@
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/bin/Debug/net6.0/cHeadphone
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/bin/Debug/net6.0/cHeadphone.deps.json
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/bin/Debug/net6.0/cHeadphone.runtimeconfig.json
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/bin/Debug/net6.0/cHeadphone.dll
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/bin/Debug/net6.0/ref/cHeadphone.dll
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/bin/Debug/net6.0/cHeadphone.pdb
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.csproj.AssemblyReference.cache
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.GeneratedMSBuildEditorConfig.editorconfig
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.AssemblyInfoInputs.cache
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.AssemblyInfo.cs
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.csproj.CoreCompileInputs.cache
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.dll
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/ref/cHeadphone.dll
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.pdb
+/home/greven/Desktop/LarsVRKlo/HeadphoneFilter/cHeadphone/obj/Debug/net6.0/cHeadphone.genruntimeconfig.cache
