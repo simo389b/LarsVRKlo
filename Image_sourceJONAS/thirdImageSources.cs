@@ -1,4 +1,4 @@
-public class ThirdImageSources {
+/*public class ThirdImageSources {
     private double[,] imageSources;
     private int noOfCoords;
     private int noOfProjs;
@@ -7,7 +7,7 @@ public class ThirdImageSources {
     private double[,] imageDummy;
     private double[] checkSumSovs;
     private string[] wallsReflectedOn;
-    public ThirdImageSources(double[,] secondImages, double[,] projection, double[] point, double[,] firstImages) 
+    public ThirdImageSources(double[,] secondImages, double[,] projection, double[] point, double[,] firstImages, string[] secondWallReflects) 
     {
         noOfCoords = secondImages.GetLength(1); //X, Y, Z
         noOfProjs = projection.GetLength(0); //Antal normaler, vi har
@@ -49,7 +49,7 @@ public class ThirdImageSources {
         int y = 0; //indeksering
         checkSumSovs = new double[noOfOldSovser*noOfProjs]; //nustil for hvert loop
         int sovserAdded = 0;
-        wallsReflectedOn = new string[noOfOldSovser*noOfProjs];
+        wallsReflectedOn = new int[noOfOldSovser*noOfProjs, 2];
         for (int o = 0; o < noOfOldSovser; o++)
         {
             for (int q = 0; q < noOfProjs; q++)
@@ -57,19 +57,20 @@ public class ThirdImageSources {
                 for (int j = 0; j < noOfCoords; j++)
                 {
                     imageDummy[y, j] = secondImages[o, j] - 2 * projection[q, j];
-                    Console.WriteLine(projection[q,j]);
+                    //Console.WriteLine(projection[q,j]);
                     checkSumSovs[y] += arbitraryFunction(imageDummy[y, j], j);
                 }
                 //Console.WriteLine("checkSum = {0}", checkSumSovs[y]);
                 if (!imageContainedCheck(checkSumSovs[y], checkSum))
                 {
                     sovserAdded++;
-                    Console.WriteLine("Sovser tilføjet: {0}", sovserAdded);
+                    //Console.WriteLine("Sovser tilføjet: {0}", sovserAdded);
                     for(int j = 0; j < noOfCoords; j++)
                     {
                         imageSources[y, j] = imageDummy[y, j];
                     }
                     checkSum.Add(checkSumSovs[y]);
+                    wallsReflectedOn[y] = secondWallReflects[o] + " -> " + q.ToString();
                     //Console.WriteLine("IMAGE SOURCE ADDED!!");
                 }
                 else
@@ -86,11 +87,16 @@ public class ThirdImageSources {
         } 
         CleanUpImageSources cleanUpSovser = new CleanUpImageSources(imageSources, sovserAdded, wallsReflectedOn);
         imageSources = cleanUpSovser.getCleanImageSources();
-        //Console.WriteLine("Der er tilføjet antal checksums: {0}",checkSum.Count);
+        wallsReflectedOn = cleanUpSovser.getWallsReflectedOn();
+        Console.WriteLine("Der burde være 36 kilder...");
     }
     public double[,] GetThirdImageSources() {
         return imageSources;
     }
+    public string[] GetThirdReflects() {
+        return wallsReflectedOn;
+    }
+
     public bool imageContainedCheck(double checkSumSovs, List<double> checkSum){
         if(checkSum.Contains(checkSumSovs))
         {
@@ -106,4 +112,4 @@ public class ThirdImageSources {
         return (funken*(iteratorJ+1)*181 + funken*(iteratorJ+2)*389 + funken*(iteratorJ+3)*137); // primtal
     }
 
-}
+} */

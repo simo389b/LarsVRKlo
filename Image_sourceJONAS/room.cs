@@ -1,4 +1,6 @@
+
 public class Room {
+    /*
     private double[,,] wallVertices = new double[,,]  
             {{ {0, 0, 0}, {5, 0, 0}, {5, 0, 5}, {0, 0, 5} },   //Write the vertices of each wall of the room.     
             { {0, 0, 0}, {0, 5, 0}, {0, 5, 5}, {0, 0, 5} },    //Write the vertices of each wall of the room.     
@@ -6,7 +8,19 @@ public class Room {
             { {5, 0, 0}, {5, 0, 5}, {5, 5, 5}, {5, 5, 0} },    //Write the vertices of each wall of the room.     
             { {0, 0, 0}, {5, 0, 0}, {5, 5, 0}, {0, 5, 0} },    //Write the vertices of each wall of the room.     
             { {0, 0, 5}, {0, 5, 5}, {5, 5, 5}, {5, 0, 5} }};   //Write the vertices of each wall of the room.
+    */    
     
+    //double width = 4.130;
+    //double length = 7.790 //Y
+    //double height = 2.780 //Z
+    private double[,,] wallVertices = new double[,,]  
+            {{ {0, 0, 0}, {4.130, 0, 0}, {4.130, 0, 2.780}, {0, 0, 2.780} },   //front     
+            { {0, 0, 0}, {4.130, 0, 0}, {4.130, 7.790, 0}, {0, 7.790, 0} },    //bund     
+            { {4.130, 0, 0}, {4.130, 7.790, 0}, {4.130, 7.790, 2.780}, {4.130, 0, 2.780} },    //højre side 
+            { {4.130, 0, 2.780}, {4.130, 7.790, 2.780}, {0, 7.790, 2.780}, {0, 0, 2.780} },    //top   
+            { {0, 0, 0}, {0, 7.790, 0}, {0, 7.790, 2.780}, {0, 0, 2.780} },    //venstre side  
+            { {4.130, 7.790, 0}, {4.130, 7.790, 2.780}, {0, 7.790, 2.780}, {0, 7.790, 0} }};   //bagside
+
     public double[,,] GetWalls() {
         return wallVertices;
     }

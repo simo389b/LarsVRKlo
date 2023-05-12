@@ -5,7 +5,7 @@ public class FirstImageSources {
     private int noOfWalls;
     private int noOfCoords;
     private double[,] projection;
-    private string[] wallsReflectedOn;
+    private int[,] wallsReflectedOn;
     
     public FirstImageSources(double[] point, double[,] wallNormals, double[,,] wallVertices) 
     {
@@ -35,29 +35,18 @@ public class FirstImageSources {
         }
         Projection projections = new Projection(wallNormals, pointVectors);
         projection = projections.GetProjections();
-        wallsReflectedOn = new string[noOfWalls];
+        wallsReflectedOn = new int[noOfWalls,2];
         for (int i = 0; i < noOfWalls; i++)
         {
             for (int j = 0; j < noOfCoords; j++)
             {
-                imageSources[i, j] = point[j] - 2 * projection[i, j];
+                imageSources[i, j] = Math.Round(point[j] - 2 * projection[i, j],3);
             }
-            wallsReflectedOn[i] = i.ToString(); 
+            wallsReflectedOn[i,0] = i; 
+            wallsReflectedOn[i,1] = -1; // not a wall, but we dont want it to be zero 
         }
     }
-    public Tuple<double[,],double[,], string[]> GetFirstImageSourcesAndProj() {
+    public Tuple<double[,],double[,], int[,]> GetFirstImageSourcesAndProj() {
         return Tuple.Create(imageSources, projection, wallsReflectedOn);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

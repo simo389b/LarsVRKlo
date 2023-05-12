@@ -34,11 +34,11 @@ public class CleanUpImageSources
 {
     double[,] imageSovsRen;
     int sovsIndex;
-    string[] wallReflectsRen;
-    public CleanUpImageSources(double[,] imageSovsUren, int supposedSize, string[] wallReflectsUren)
+    int[,] wallReflectsRen;
+    public CleanUpImageSources(double[,] imageSovsUren, int supposedSize, int[,] wallReflectsUren)
     {   
         imageSovsRen = new double[supposedSize, imageSovsUren.GetLength(1)];
-        wallReflectsRen = new string[supposedSize];
+        wallReflectsRen = new int[supposedSize, 2];
         sovsIndex = 0;
         for (int i = 0; i < imageSovsUren.GetLength(0); i++)
         {
@@ -48,7 +48,8 @@ public class CleanUpImageSources
                 {
                     imageSovsRen[sovsIndex,j] = imageSovsUren[i,j];
                 }
-                wallReflectsRen[sovsIndex] = wallReflectsUren[i];
+                wallReflectsRen[sovsIndex,0] = wallReflectsUren[i,0];
+                wallReflectsRen[sovsIndex,1] = wallReflectsUren[i,1];
                 sovsIndex++;
             }
         }
@@ -58,7 +59,7 @@ public class CleanUpImageSources
         return imageSovsRen;
     }
 
-    public string[] getWallsReflectedOn()
+    public int[,] getWallsReflectedOn()
     {
         return wallReflectsRen;
     }
