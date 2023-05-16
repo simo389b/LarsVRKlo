@@ -88,8 +88,39 @@ public class Program {
             z++;
         }
         double[] recPos = new double[] {2,2,2};
-        double[] patternDir = new double[] {1, 0, 0};
-        DirectivityV3 directivity = new DirectivityV3(ISMPositions, recPos, ISMWallReflects, patternDir);
+        double[] patternDir = new double[2];
+        patternDir[0] = 0.0*Math.PI/180.0; //Azimuth
+        patternDir[1] = 0.0*Math.PI/180.0; //Elevation
+        //DirectivityV3 directivity = new DirectivityV3(ISMPositions, recPos, ISMWallReflects, patternDir);
+        
+        double[] directivies = new double[ISMPositions.GetLength(0)+1];
+        Console.WriteLine("Source no.: 0");
+        DirectivityV4 directivity = new DirectivityV4(point, recPos, new int[2]{-1,-1}, patternDir, point);
+        directivies[0] = directivity.getDirectivityScalar();
+        //Console.WriteLine(directivies[0]);
+
+
+
+        double[] ISMTemp = new double[3];
+        int[] wallsTemp = new int[3];
+
+        for (int i = 1; i < ISMPositions.GetLength(0)+1; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                
+                ISMTemp[j] = ISMPositions[i-1,j];
+                
+            }
+            for (int k = 0; k < 2; k++)
+            {
+                wallsTemp[k] = ISMWallReflects[i-1,k];
+            }
+            Console.WriteLine("Source no.: {0}", i);
+            directivity = new DirectivityV4(ISMTemp, recPos, wallsTemp, patternDir, point);
+            directivies[i] = directivity.getDirectivityScalar();
+            Console.WriteLine("Damping factor: {0}", directivies[i]);
+        }
     }
 
 /*
