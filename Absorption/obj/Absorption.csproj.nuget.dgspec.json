@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/simon/Documents/Absorption/Absorption.csproj": {}
+    "/home/simon/Documents/LarsVRKlo/Absorption/Absorption.csproj": {}
   },
   "projects": {
-    "/home/simon/Documents/Absorption/Absorption.csproj": {
+    "/home/simon/Documents/LarsVRKlo/Absorption/Absorption.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/simon/Documents/Absorption/Absorption.csproj",
+        "projectUniqueName": "/home/simon/Documents/LarsVRKlo/Absorption/Absorption.csproj",
         "projectName": "Absorption",
-        "projectPath": "/home/simon/Documents/Absorption/Absorption.csproj",
+        "projectPath": "/home/simon/Documents/LarsVRKlo/Absorption/Absorption.csproj",
         "packagesPath": "/home/simon/.nuget/packages/",
-        "outputPath": "/home/simon/Documents/Absorption/obj/",
+        "outputPath": "/home/simon/Documents/LarsVRKlo/Absorption/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/simon/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,15 @@
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.csproj.AssemblyReference.cache
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.GeneratedMSBuildEditorConfig.editorconfig
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.AssemblyInfoInputs.cache
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.AssemblyInfo.cs
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.csproj.CoreCompileInputs.cache
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/bin/Debug/net6.0/HeadphoneFilter
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/bin/Debug/net6.0/HeadphoneFilter.deps.json
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/bin/Debug/net6.0/HeadphoneFilter.runtimeconfig.json
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/bin/Debug/net6.0/HeadphoneFilter.dll
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/bin/Debug/net6.0/ref/HeadphoneFilter.dll
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/bin/Debug/net6.0/HeadphoneFilter.pdb
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.dll
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/ref/HeadphoneFilter.dll
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.pdb
+/home/simon/Documents/LarsVRKlo/HeadphoneFilter/obj/Debug/net6.0/HeadphoneFilter.genruntimeconfig.cache

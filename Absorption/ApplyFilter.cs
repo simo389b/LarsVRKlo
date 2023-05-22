@@ -2,7 +2,7 @@
 
 public static class ApplyFilter {
     private static float[] internalBuffer = new float[30];
-    private static float[] internalBuffer2 = new float[60];
+    private static float[] internalBuffer2 = new float[59];
     //private static string filename = "Filters.txt";
     
     //private static float[] twoFilters;
@@ -19,10 +19,11 @@ public static class ApplyFilter {
                 internalBuffer2[internalBuffer2.Length-i] = internalBuffer2[internalBuffer2.Length-i-1];
             }
             internalBuffer2[0] = input;
-            Console.WriteLine(internalBuffer2[0]);
+            //Console.WriteLine(internalBuffer2[0]);
 
             int n = coefficients.Length;
             int m = internalBuffer2.Length;
+            Console.WriteLine(n);
             //float output = 0.0f; 
             for (int i = 0; i < m-1; i++) 
             {

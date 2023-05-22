@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/simon/Documents/Image_source/reflectiveSurfaces.csproj",
-      "projectName": "reflectiveSurfaces",
-      "projectPath": "/home/simon/Documents/Image_source/reflectiveSurfaces.csproj",
+      "projectUniqueName": "/home/simon/Documents/LarsVRKlo/Image_source/Image_source.csproj",
+      "projectName": "Image_source",
+      "projectPath": "/home/simon/Documents/LarsVRKlo/Image_source/Image_source.csproj",
       "packagesPath": "/home/simon/.nuget/packages/",
-      "outputPath": "/home/simon/Documents/Image_source/obj/",
+      "outputPath": "/home/simon/Documents/LarsVRKlo/Image_source/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/simon/.nuget/NuGet/NuGet.Config"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.116/RuntimeIdentifierGraph.json"
       }
     }
   }

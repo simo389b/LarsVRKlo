@@ -4,7 +4,7 @@ class Program {
     //private static float output = new float();
     static void Main(string[] args) 
     {   
-        int[] walls = {2,-1};
+        int[] walls = {0,-1};
         string fil = "TESTTESTTEST.txt";
         float[][] testInput = txtReader.Read(fil);
         float[] coefficients;
@@ -23,7 +23,7 @@ class Program {
                 output = ApplyFilter.applyFilter(input, coefficients);
                 outputArray[j] = output;
             }
-            Console.WriteLine(outputArray[100]);
+            Console.WriteLine(outputArray[1]);
         //float testInput = 1;
          
         
